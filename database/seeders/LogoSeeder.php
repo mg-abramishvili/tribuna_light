@@ -25,6 +25,10 @@ class LogoSeeder extends Seeder
             'title' => '2',
             'logo' => '/img/SNG_1-4-1.png',
         ],
+        [
+            'title' => '3',
+            'logo' => '/img/gif.gif',
+        ],
         ]);
     }
 }

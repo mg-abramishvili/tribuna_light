@@ -8,4 +8,8 @@ use App\Http\Controllers\SlideController;
 
 Route::resource('/slides', SlideController::class);
 
+Route::get('s', function () {
+    return redirect('/slides/1/edit');
+});
+
 Route::get('/','App\Http\Controllers\FrontController@index');

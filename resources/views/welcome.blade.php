@@ -8,6 +8,8 @@
     <script src="{{ asset('js/jquery.min.js') }}"></script>
 
     <style>
+		html, body {cursor: none;}
+		
         body,
         .wrapper,
         .slide {
@@ -58,6 +60,8 @@
 
                 @foreach($slide->logos as $logo)
                 @if($logo->id == '1')
+                <img src="{{$logo->logo}}" style="width:250px;display:block;margin:0 auto;position:absolute; left: 15px; right: 15px; bottom: 100px;">
+                @elseif($logo->id == '3')
                 <img src="{{$logo->logo}}" style="width:250px;display:block;margin:0 auto;position:absolute; left: 15px; right: 15px; bottom: 100px;">
                 @else
                 <img src="{{$logo->logo}}" style="width:500px;display:block;margin:0 auto;position:absolute; left: 15px; right: 15px; bottom: 100px;">
